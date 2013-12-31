@@ -1,0 +1,36 @@
+// css reset
+@import 'reset.css';
+// utility mixins
+@import 'util.less';
+
+// color variables
+@color-card1-white: #FFFFFF;
+@color-card1-lightskyblue: #D9F3FD;
+@color-card1-skyblue: #7FD6F7;
+@color-card1-lightseablue: #52C8F5;
+@color-card1-medseablue: #3093D8;
+@color-card1-darkseablue: #1A74C4;
+
+// use border-box on everything
+* {
+	#util > .box-sizing(border-box);
+}
+
+html {
+	overflow: hidden;
+}
+
+// background elements
+html,
+body,
+#background,
+.foreground {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#background {
+	background: @color-card1-lightskyblue;
+}
